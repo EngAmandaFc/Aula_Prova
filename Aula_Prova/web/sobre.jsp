@@ -15,6 +15,8 @@
         <%@include file="WEB-INF/jspf/menu.jspf" %>
         <br>
         <br>
+        <br>
+        <br>
         
         <h1 style="color:lightslategray;">A aluna Amanda Fernandez Caetano está matriculada na Fatec de PG</h1>
         <br>
@@ -25,6 +27,8 @@
         <h2>Repositório do GitHub:<a href="https://github.com/EngAmandaFc">https://github.com/EngAmandaFc</a></h2>
          <br>
         <br>
-        <h2><a href="index.jsp">Voltar</a></h2>
+         <br>
+        <br>
+        <h3><a href="index.jsp">Voltar</a></h3>
     </body>
 </html>
