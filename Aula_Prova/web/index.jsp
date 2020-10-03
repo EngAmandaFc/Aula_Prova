@@ -15,7 +15,7 @@
         <%@include file="WEB-INF/jspf/menu.jspf" %>
         <br>
         <br>
-        <h1 style="color:lightslategray;">Aluno: Amanda Fernandez Caetano</h1>
+        <h1 style="color:lightslategray;"><a href="sobre.jsp">Aluno: Amanda Fernandez Caetano</a></h1>
         <br>
         <br>
         <h1 style="color:lightslategray;">RA: 1290481912050</h1>

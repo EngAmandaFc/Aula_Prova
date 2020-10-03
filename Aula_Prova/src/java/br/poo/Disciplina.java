@@ -15,7 +15,7 @@ public class Disciplina {
     private int ciclo;
     private double nota;
     
-    public Disciplina(String name, String email, int ciclo, double nota){
+    public Disciplina(String name, String ementa, int ciclo, double nota){
         this.name = name;
         this.ementa = ementa;
         this.ciclo = ciclo;
@@ -68,6 +68,7 @@ public class Disciplina {
         return list;
     }
 }
+
 
 
 
