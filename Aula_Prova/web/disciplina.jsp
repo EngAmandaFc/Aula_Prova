@@ -18,11 +18,17 @@
         disciplinaList.add(new Disciplina("Inglês V", "Aprofundamento da compreensão e produção oral e escrita por meio funções sociais e estruturas mais complexas da língua. Ênfase na oralidade, atendendo às especificidades acadêmico-profissionais da área e abordando aspectos sócio-culturais da língua inglesa",5,0.0));
         disciplinaList.add(new Disciplina("LP IV", "Comandos de linguagens usadas na construção e estruturação de sites para a Web, com páginas dinâmi­cas e interativas. Definição de layouts e formatação em geral. Adição de algorítmos usando laços, matrizes, datas, funções e condições. Introdução a Orientação a Objetos utilizando objetos, métodos e propriedades. Integração com Banco de Dados. Exercícios práticos com projeto de criação de sites.",4,0.0));
         disciplinaList.add(new Disciplina("BD", "Conceitos de Base de Dados.Modelos de Dados: Relacional, Redes e Hierárquicos. Modelagem de dados - conceitual, lógica e física. Teoria relacional: dependências funcionais e multivaloradas, formas normais. Restrições de integridade e de segurança em Banco de Dados Relacional. Sistemas Gerenciadores de Banco de Dados – objetivo e funções. Linguagens de declaração e de manipulação de dados.",5,0.0));
+       
         application.setAttribute("disciplinaList", disciplinaList);
     }
     if(request.getParameter("red")!=null){
         int i = Integer.parseInt(request.getParameter("i"));
         Disciplina alt = disciplinaList.get(i);
+        
+        try{
+            alt.setNota(Double.parseDouble(request.getParameter("nota")));
+    }catch (Exception ex){
+        alt.setNota(0.0);
     }
     
         response.sendRedirect(request.getRequestURI());
@@ -61,7 +67,7 @@
                     <form>
                         <input type="hidden" name="i" value="<%= i %>"/>
                         <input type="number" step="0.01" min="0" name="nota" style="width: 50px"/>
-                        <input type="submit" name="remove" value="Remover"/>
+                        <input type="submit" name="red" value="Redefinir"/>
                     </form>
                 </td>
             </tr>
