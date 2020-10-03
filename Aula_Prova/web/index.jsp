@@ -12,6 +12,9 @@
         <title style="color:lightslategray;">Início</title>
     </head>
     <body>
+        <%@include file="WEB-INF/jspf/menu.jspf" %>
+        <br>
+        <br>
         <h1 style="color:lightslategray;">Aluno: Amanda Fernandez Caetano</h1>
         <br>
         <br>
